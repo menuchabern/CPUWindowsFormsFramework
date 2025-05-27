@@ -40,5 +40,13 @@ namespace CPUWindowsFormsFramework
                 ctrl.DataBindings.Add(propertyname, dt, columnname, true, DataSourceUpdateMode.OnPropertyChanged);
             }
         }
+
+        public static void FormatGridForSearchResult(DataGridView grid)
+        {
+            grid.AllowUserToAddRows = false;
+            grid.ReadOnly = true;
+            grid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        }
     }
 }
