@@ -12,3 +12,4 @@ C:\Users\menuc\source\repos\CPUWindowsFormsFramework\obj\Debug\net8.0-windows\re
 C:\Users\menuc\source\repos\CPUWindowsFormsFramework\obj\Debug\net8.0-windows\CPUWindowsFormsFramework.pdb
 C:\Users\menuc\source\repos\CPUWindowsFormsFramework\obj\Debug\net8.0-windows\CPUWindowsFormsFramework.genruntimeconfig.cache
 C:\Users\menuc\source\repos\CPUWindowsFormsFramework\obj\Debug\net8.0-windows\ref\CPUWindowsFormsFramework.dll
+C:\Users\menuc\source\repos\CPUWindowsFormsFramework\obj\Debug\net8.0-windows\CPUWindowsFormsFramework.sourcelink.json
