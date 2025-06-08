@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CPUWindowsFormsFramework")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16d7cc6743e5f71b1ce491fc36968db821845655")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a799beb066f6ba81f5eaef6cb89d451ae1f21abb")]
 [assembly: System.Reflection.AssemblyProductAttribute("CPUWindowsFormsFramework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CPUWindowsFormsFramework")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
