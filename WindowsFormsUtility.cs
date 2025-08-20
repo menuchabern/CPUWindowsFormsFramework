@@ -57,7 +57,7 @@ namespace CPUWindowsFormsFramework
             grid.RowHeadersWidth = 25;
             foreach(DataGridViewColumn col in grid.Columns)
             {
-                if (col.Name.EndsWith("id"))
+                if (col.Name.EndsWith("Id"))
                 {
                     col.Visible = false;
                 }
@@ -93,6 +93,11 @@ namespace CPUWindowsFormsFramework
             c.DataPropertyName = c.ValueMember;
             grid.Columns.Insert(0, c);
             DoFormatGrid(grid, tablename);
+        }
+
+        public static void AddDeleteButtonToGrid(DataGridView grid, string deletcolname)
+        {
+            grid.Columns.Add(new DataGridViewButtonColumn() { Text = "X", HeaderText = "Delete", Name = deletcolname, UseColumnTextForButtonValue = true });
         }
 
         public static bool IsFormOpen(Type formtype, int pkvalue = 0)
