@@ -39,21 +39,21 @@ namespace CPUWindowsFormsFramework
             }
         }
 
-        public static void FormatGridForSearchResult(DataGridView grid, string tablename)
+        public static void FormatGridForSearchResult(DataGridView grid)
         {
             grid.AllowUserToAddRows = false;
             grid.ReadOnly = true;
             grid.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            DoFormatGrid(grid, tablename);
+            DoFormatGrid(grid);
         }
 
-        public static void FormatGridForEdit(DataGridView grid, string tablename)
+        public static void FormatGridForEdit(DataGridView grid)
         {
             grid.EditMode = DataGridViewEditMode.EditOnEnter;
-            DoFormatGrid(grid, tablename);
+            DoFormatGrid(grid);
         }
 
-        private static void DoFormatGrid(DataGridView grid, string tablename)
+        private static void DoFormatGrid(DataGridView grid)
         {
             grid.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             grid.RowHeadersWidth = 25;
@@ -63,12 +63,6 @@ namespace CPUWindowsFormsFramework
                 {
                     col.Visible = false;
                 }
-            }
-
-            string pkname = tablename + "Id";
-            if (grid.Columns.Contains(pkname))
-            {
-                grid.Columns[pkname].Visible = false;
             }
         }
 
@@ -104,7 +98,7 @@ namespace CPUWindowsFormsFramework
             c.HeaderText = tablename;
             c.DataPropertyName = c.ValueMember;
             grid.Columns.Insert(0, c);
-            DoFormatGrid(grid, tablename);
+            DoFormatGrid(grid);
         }
 
         public static void AddDeleteButtonToGrid(DataGridView grid, string deletcolname)
