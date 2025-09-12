@@ -1,4 +1,5 @@
 ﻿using System.Data;
+using System.Security.Cryptography;
 
 namespace CPUWindowsFormsFramework
 {
@@ -31,6 +32,9 @@ namespace CPUWindowsFormsFramework
                     break;
                 case "dtp":
                     propertyname = "Value";
+                    break;
+                case "ckb":
+                    propertyname = "Checked";
                     break;
             }
             if (propertyname != "" && columnname != "")
